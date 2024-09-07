@@ -12,6 +12,9 @@ export default function Home() {
           <Link className="underline text-blue-900" href="/charts/area-chart">Area Chart</Link>
         </li>
         <li className="my-4">
+          <Link className="underline text-blue-900" href="/charts/stacked-area-chart">Stacked Area Chart</Link>
+        </li>
+        <li className="my-4">
           <Link className="underline text-blue-900" href="/charts/heatmap">Heatmap</Link>
         </li>
       </ul>
