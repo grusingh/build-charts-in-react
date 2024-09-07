@@ -4,7 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import 'leaflet.heat';
 
-const HeatmapLayer = ({ map, data }) => {
+const HeatmapLayer = ({ data }) => {
+  const map = useMap();
   const radius = 25;
   const blur = 15;
 
@@ -20,15 +21,13 @@ const HeatmapLayer = ({ map, data }) => {
 };
 
 const Heatmap = ({data, center, zoom, style}) => {
-  const map = useMap();
-
   return (
     <MapContainer center={center} zoom={zoom} style={style}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <HeatmapLayer data={data} map={map} />
+      <HeatmapLayer data={data} />
     </MapContainer>
   );
 };
