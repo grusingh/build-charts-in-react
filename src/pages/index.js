@@ -8,8 +8,11 @@ export default function Home() {
         <li className="my-4">
           <Link className="underline text-blue-900" href="/charts/line-chart">Line Chart</Link>
         </li>
-        <li>
+        <li className="my-4">
           <Link className="underline text-blue-900" href="/charts/pie-chart">Pie Chart</Link>
+        </li>
+        <li className="my-4">
+          <Link className="underline text-blue-900" href="/charts/bar-chart">Bar Chart</Link>
         </li>
         <li className="my-4">
           <Link className="underline text-blue-900" href="/charts/area-chart">Area Chart</Link>
